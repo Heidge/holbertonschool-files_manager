@@ -1,7 +1,7 @@
 // utils/db.mjs
-import pkg from 'mongodb';
+import mongodb from 'mongodb';
 
-const { MongoClient, ObjectId } = pkg;
+const { MongoClient } = mongodb;
 
 const host = process.env.DB_HOST || 'localhost';
 const port = process.env.DB_PORT || 27017;
