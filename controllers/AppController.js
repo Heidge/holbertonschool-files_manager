@@ -1,5 +1,5 @@
 import redisClient from '../utils/redis';
-import dbClient from '../utils/db';
+import dbClient from '../utils/db.mjs';
 
 export default class AppController {
   // Call directly with the class without instance

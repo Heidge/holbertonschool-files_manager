@@ -1,5 +1,7 @@
 // utils/db.mjs
-const { MongoClient, ObjectId } = require('mongodb');
+import pkg from 'mongodb';
+
+const { MongoClient, ObjectId } = pkg;
 
 const host = process.env.DB_HOST || 'localhost';
 const port = process.env.DB_PORT || 27017;
@@ -36,4 +38,4 @@ class DBClient {
 }
 
 const dbClient = new DBClient();
-module.exports = dbClient
+export default dbClient;
